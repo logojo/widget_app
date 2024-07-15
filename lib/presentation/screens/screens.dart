@@ -5,5 +5,6 @@ export 'package:widget_app/presentation/screens/butttons/buttons.dart';
 export 'package:widget_app/presentation/screens/home/home.dart';
 export 'package:widget_app/presentation/screens/infinite_scroll/infinite_scroll.dart';
 export 'package:widget_app/presentation/screens/progress/progress.dart';
+export 'package:widget_app/presentation/screens/sbackbar/snackbar_screen.dart';
 export 'package:widget_app/presentation/screens/tarjetas/cards.dart';
 export 'package:widget_app/presentation/screens/ui_controls/ui_controls.dart';
