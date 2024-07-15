@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:widget_app/config/menu/menu_item.dart';
 
 class Home extends StatelessWidget {
+  static const name = 'home';
   const Home({super.key});
 
   @override
@@ -76,6 +77,8 @@ class _CustomListTile extends StatelessWidget {
         *Naveacion por GoRouter
         */
         context.push(menuItem.link);
+
+        //context.pushNamed(menuItem.title) -> el titulo tendria que ser igual al nombre definido en la variable statica;
       },
     );
   }

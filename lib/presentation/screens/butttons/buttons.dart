@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Buttons extends StatelessWidget {
+  static const name = 'buttons';
   const Buttons({super.key});
 
   @override
