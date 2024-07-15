@@ -20,6 +20,8 @@ class AppTheme {
             'Selected color must be less or equal then ${colors.length - 1}');
 
   ThemeData getTheme() => ThemeData(
-        colorSchemeSeed: colors[seletedColor],
-      );
+      colorSchemeSeed: colors[seletedColor],
+      appBarTheme: const AppBarTheme(
+        centerTitle: false,
+      ));
 }
