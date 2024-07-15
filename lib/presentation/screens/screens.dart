@@ -1,3 +1,9 @@
-export 'package:widget_app/presentation/screens/tarjetas/cards.dart';
+export 'package:flutter/material.dart';
+export 'package:widget_app/presentation/screens/animated/animated.dart';
+export 'package:widget_app/presentation/screens/app_tutorial/app_tutorial.dart';
 export 'package:widget_app/presentation/screens/butttons/buttons.dart';
 export 'package:widget_app/presentation/screens/home/home.dart';
+export 'package:widget_app/presentation/screens/infinite_scroll/infinite_scroll.dart';
+export 'package:widget_app/presentation/screens/progress/progress.dart';
+export 'package:widget_app/presentation/screens/tarjetas/cards.dart';
+export 'package:widget_app/presentation/screens/ui_controls/ui_controls.dart';
