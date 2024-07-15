@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:widget_app/config/router/app_router.dart';
 import 'package:widget_app/config/theme/app_theme.dart';
-import 'package:widget_app/presentation/screens/butttons/buttons.dart';
-import 'package:widget_app/presentation/screens/home/home.dart';
-import 'package:widget_app/presentation/tarjetas/cards.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,17 +11,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      //extrallendo rutas desde un archivo independiente
+      routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
       theme: AppTheme(seletedColor: 0).getTheme(),
-      home: const Scaffold(
-        body: Home(),
-      ),
-      //Navegacion a diferentes pantallas
-      routes: {
-        '/buttons': (context) => const Buttons(),
-        '/cards': (context) => const Cards()
-      },
     );
   }
 }

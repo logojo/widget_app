@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widget_app/config/menu/menu_item.dart';
-import 'package:widget_app/config/theme/app_theme.dart';
-import 'package:widget_app/presentation/screens/butttons/buttons.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -59,15 +58,24 @@ class _CustomListTile extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subtitle),
       onTap: () {
-        //Navegacion desde el boton
+        /*  
+        *Navegacion desde el boton 
+        */
         // Navigator.of(context).push(
         //   MaterialPageRoute(
         //     builder: (context) => const Buttons(),
         //   ),
         // );
 
-        //Navegacion desde las rutas del main
-        Navigator.pushNamed(context, menuItem.link);
+        /* 
+         *Navegacion desde las rutas del main
+        */
+        //Navigator.pushNamed(context, menuItem.link);
+
+        /* 
+        *Naveacion por GoRouter
+        */
+        context.push(menuItem.link);
       },
     );
   }
