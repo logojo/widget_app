@@ -16,7 +16,7 @@ class MainApp extends StatelessWidget {
       //extrallendo rutas desde un archivo independiente
       routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
-      theme: AppTheme(seletedColor: 5).getTheme(),
+      theme: AppTheme(seletedColor: 2).getTheme(),
     );
   }
 }
