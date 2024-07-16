@@ -12,6 +12,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      title: 'Flutter widget',
       //extrallendo rutas desde un archivo independiente
       routerConfig: appRouter,
       debugShowCheckedModeBanner: false,

@@ -30,6 +30,11 @@ const appMenuItems = <MenuItem>[
       link: '/progress',
       icon: Icons.refresh_rounded),
   MenuItem(
+      title: 'Snackbars and Dialogs',
+      subtitle: 'Indicadores en pantalla',
+      link: '/snackbar',
+      icon: Icons.info_outline),
+  MenuItem(
       title: 'Animated',
       subtitle: 'Un contenedor Animado',
       link: '/animated',
@@ -44,11 +49,6 @@ const appMenuItems = <MenuItem>[
       subtitle: 'un contenedor con Infinite Scroll',
       link: '/infinite',
       icon: Icons.pages),
-  MenuItem(
-      title: 'Snackbar',
-      subtitle: 'snackbar para mensajes',
-      link: '/snackbar',
-      icon: Icons.branding_watermark_sharp),
   MenuItem(
       title: 'UiControls',
       subtitle: 'UiControls',
