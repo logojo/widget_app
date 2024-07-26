@@ -12,6 +12,11 @@ final appRouter = GoRouter(
       builder: (context, state) => const Home(),
     ),
     GoRoute(
+      name: Counter.name,
+      path: '/counter',
+      builder: (context, state) => const Counter(),
+    ),
+    GoRoute(
       name: Buttons.name,
       path: '/buttons',
       builder: (context, state) => const Buttons(),
@@ -50,6 +55,11 @@ final appRouter = GoRouter(
       name: UiControls.name,
       path: '/ui',
       builder: (context, state) => const UiControls(),
+    ),
+    GoRoute(
+      name: ThemeChanger.name,
+      path: '/theme-changer',
+      builder: (context, state) => const ThemeChanger(),
     ),
   ],
 );

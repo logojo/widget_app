@@ -13,13 +13,15 @@ const colors = <Color>[
 
 class AppTheme {
   final int seletedColor;
+  final bool darkMode;
 
-  AppTheme({this.seletedColor = 0})
+  AppTheme({this.seletedColor = 0, this.darkMode = false})
       : assert(seletedColor >= 0, 'Selected color must be greater than 0 '),
         assert(seletedColor < colors.length,
             'Selected color must be less or equal then ${colors.length - 1}');
 
   ThemeData getTheme() => ThemeData(
+      brightness: darkMode ? Brightness.dark : Brightness.light,
       colorSchemeSeed: colors[seletedColor],
       appBarTheme: const AppBarTheme(
         centerTitle: false,
